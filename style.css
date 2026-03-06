@@ -1,0 +1,972 @@
+.form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f1f3f4;
+}
+
+h1 {
+    color: #2D3E50;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.welcome-text {
+    text-align: center;
+    color: #5f6368;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.form-field {
+    margin-bottom: 24px;
+    background-color: #faf9f7;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e8e8e8;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c4043;
+    margin-bottom: 8px;
+}
+
+.required {
+    color: #d93025;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+.form-input {
+    width: 100%;
+    padding: 16px 12px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 16px;
+    background: white;
+    margin-top: 4px;
+}
+
+input:focus,
+.form-input:focus {
+    border-color: #4285f4;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(66, 133, 244, 0.2);
+}
+
+input::placeholder {
+    color: #9aa0a6;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+.radio-option:hover {
+    background: rgba(66, 133, 244, 0.08);
+}
+
+.radio-option input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.submit-btn {
+    background: linear-gradient(#2d3e50);
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 24px;
+    box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+}
+
+.submit-btn:hover {
+    background: linear-gradient(#1a2535);
+    transform: translateY(-1px);
+    color: white;
+}
+
+.validation-error {
+    color: #d93025;
+    font-size: 14px;
+    margin-top: 8px;
+    display: none;
+    background: rgba(217, 48, 37, 0.1);
+    padding: 8px 12px;
+    border-radius: 4px;
+    border-left: 3px solid #d93025;
+}
+
+.form-field:focus-within label {
+    color: #4285f4;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .form-container {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f1f3f4;
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 65px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2d3e50;
+    font-weight: 700;
+    font-size: 14px;
+    transition: color 0.3s;
+     padding: 25px 15px;  /* Adds clickable area */
+    display: inline-block;  /* Makes padding work */
+    
+    
+}
+
+nav a:hover {
+    color: #FFAC33;
+    
+
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/*All pages header */
+.hero {
+    background: #ffac33;
+    color: white;
+    text-align: center;
+    padding: 10px 150px 10px 150px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+    /*css for the home page boxes */
+    .content-box {
+        
+        padding: 40px;
+        max-width: 100%;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        margin-top: -30px;
+    }
+
+    .content-box h2 {
+        color: #2D3E50;
+        font-size: 25px;
+        margin-bottom: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .content-box p {
+        margin-bottom: 10px;
+        line-height: 1;
+        text-align: justify;
+    }
+
+    .icon-list {
+        list-style: none;
+        margin: 20px 0;
+         padding: 0;
+    text-align: center;
+    }
+
+    .icon-list li {
+    justify-content: center;   
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+    .icon-list i {
+        color: #FFAC33;
+        margin-right: 15px;
+        font-size: 20px;
+       
+    }
+
+     .bg-softcream {
+    background-color: #fff9f3;
+    }
+
+    .bg-darkcream {
+    background-color: #f9ebdc;
+    }
+
+    .box {
+    text-align: center;
+}
+
+.box .icon-list {
+    padding: 0;
+}
+
+.box .icon-list li {
+    justify-content: center;
+    align-items: center;
+}
+ .box p {
+    text-align: center;
+
+ }
+
+.accordion {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.accordion-item {
+    background: #f8eadb;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    font-weight: 600;
+    color: #2D3E50;
+    transition: background 0.3s;
+}
+
+.accordion-header:hover {
+    background: #ffac33;
+}
+
+.accordion-header i {
+    transition: transform 0.3s;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 20px;
+   transition: 
+    max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.4s ease,
+    padding 0.4s ease;
+
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 1000px;  
+    opacity: 1;
+    padding: 20px;
+}
+
+
+.accordion-item.active .accordion-header i {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+.cta-button {
+    display: inline-block;
+    background: #2D3E50;
+    color: white;
+    padding: 12px 30px;
+    
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 20px 0;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background: #1a2535;
+    transform: translateY(-2px);
+}
+
+footer {
+    background: #2D3E50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #FFAC33;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 80px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .content-box {
+        padding: 20px;
+    }
+}
+
+/* ========================================
+   APP PAGE SPECIFIC STYLES
+   ======================================== */
+
+/* Center text alignment for intro section */
+.app-intro-text {
+    text-align: center;
+}
+
+/* Icon styling in headers */
+.header-icon {
+    color: #FFAC33;
+    margin-right: 10px;
+}
+
+/* Install button and message container */
+.install-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#installMessage {
+    margin-top: 15px;
+    color: #666;
+}
+
+/* iPhone installation steps box */
+.installation-steps {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.installation-steps h3 {
+    color: #2D3E50;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.installation-steps ol {
+    line-height: 2;
+    padding-left: 20px;
+}
+
+.installation-steps a {
+    color: #FFAC33;
+    font-weight: 600;
+}
+
+.installation-steps .share-icon {
+    color: #FFAC33;
+}
+
+/* Security section list styling */
+.security-list {
+    margin-top: 20px;
+}
+
+/* ========================================
+   HOME PAGE SPECIFIC STYLES
+   ======================================== */
+
+/* Job News Ticker */
+.job-news-ticker {
+    position: absolute;
+    top: 12.5%;  /* Position from top of hero */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 74%;
+    max-width: 1200px;
+    background: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 3px solid #2d3e50;
+    border-radius: 15px;
+    z-index: 10;
+}
+
+.ticker-badge {
+    background: #2d3e50;
+    color: white;
+    padding: 14px 110px;
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+    border-right: 2px solid #2d3e50;
+    border-right: none;  /* Remove border */
+}
+
+.ticker-content-wrapper {
+    flex: 1;
+    overflow: hidden;
+    padding: 10px  20px;
+     background: #f9ebdc;  /* Light background */
+    border-radius: 0 50px 50px 0;  /* Rounded right side */
+}
+
+.ticker-content {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: ticker 25s linear infinite;
+}
+
+.ticker-item {
+    padding: 0 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ticker-item::after {
+    content: "|";
+    margin-left: 40px;
+    color: black;
+}
+
+/* Hero Section */
+.home-hero {
+    background: #ffac33;
+    color: white;
+    padding: 30px 80px 40px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+
+
+.hero-content {
+    flex: 1;
+    padding: 0;
+    display:flex;
+    position: relative;
+    justify-content: right;
+    border-radius: 18px;
+    color: #2d3e50;
+}
+
+.hero-card {
+    background: #fdebd7;
+    padding: 30px 35px;
+    border-radius: 22px;
+    max-width: 480px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+.hero-card .cta-button {
+    display: block;
+    margin: 25px auto 0 auto;
+    text-align: center;
+}
+
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    hyphens: auto;
+    line-height: 1.6;
+}
+
+.hero-features {
+    list-style: none;
+    margin: 20px 0;
+    color: #2d3e50;
+    padding-left: 20px;
+}
+
+/* hero card feature css*/
+.hero-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+
+.hero-features i {
+    color: #2d3e50;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.hero-image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img {
+    max-width: 63%; 
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home-hero {
+        padding: 40px 20px;
+    }
+
+    .hero-card {
+        padding: 30px 25px;
+        max-width: 100%;
+    }
+
+    .hero-card h1 {
+        font-size: 30px;
+    }
+}
+/* Mission and CTA Sections */
+.mission-section {
+    text-align: center;
+    font-size: 18px;
+    background-color: white;
+}
+
+.mission-section p {
+    margin-bottom: 20px;
+}
+
+.cta-section {
+    text-align: center;
+    color : #fdebd7
+}
+
+.cta-section h2 {
+    color: #2d3e50;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    color: #66545E;
+}
+
+/* Registration Grid */
+.registration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+/* CTA and Registration Wrapper - Full Width with Background Color */
+.cta-registration-wrapper {
+    background-color: #f9ebdc;
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.registration-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #2D3E50;
+    border: 2px solid #e8e8e8;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration-card:hover {
+    border-color: #FFAC33;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 172, 51, 0.2);
+}
+
+.registration-card i {
+    font-size: 3em;
+    color: #FFAC33;
+    margin-bottom: 15px;
+}
+
+.registration-card h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Active nav link */
+nav a.active {
+    color: #FFAC33;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-subtitle {
+        font-size: 1em;
+    }
+
+    .ticker-badge {
+        padding: 12px 15px;
+        font-size: 12px;
+    }
+
+    .registration-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .registration-card {
+        padding: 20px 10px;
+    }
+
+    .registration-card i {
+        font-size: 2em;
+    }
+
+    .registration-card h3 {
+        font-size: 1em;
+    }
+}
+
+/* Additional styles to be added to style.css */
+
+/* Highlighted box styles */
+.highlight-box {
+    
+    padding: 30px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.highlight-box h2 {
+    color: #2D3E50;
+    margin-bottom: 20px;
+}
+
+.highlight-box p {
+    margin-bottom: 20px;
+}
+
+.highlight-box .cta-button {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Text alignment utilities */
+.text-center {
+    text-align: center;
+}
+
+/* FAQ section styling */
+.faq-contact-box {
+    
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.faq-contact-box h2 {
+    color: #2D3E50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-contact-box p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-contact-box .cta-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* About Us - Founder section */
+.about-founder-box {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.founder-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.founder-image {
+    flex-shrink: 0;
+    width: 280px;
+}
+
+.founder-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.founder-info h2 {
+    color: #2D3E50;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.founder-info p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+
+.founder-caption h3 {
+    margin: 5px 0;
+    color: #2D3E50;
+    font-size: 18px;
+    text-align: center;
+}
+
+.founder-caption p {
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-size: 16px;
+    
+}
+/* Mobile responsive for founder section */
+@media (max-width: 768px) {
+    .founder-content {
+        flex-direction: column;
+    }
+
+    .founder-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+.donorimg {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.scanheader {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Target the footer class identified in your screenshot */
+.asw-footer {
+    display: none !important;
+}
+
+/*Responsiveness*/
+/* Tablet responsive */
+@media (max-width: 768px) {
+    .cta-registration-wrapper {
+        padding: 30px 0;
+    }
+    
+    .cta-registration-wrapper .cta-section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .cta-registration-wrapper .registration-grid {
+        padding: 15px;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .cta-registration-wrapper {
+        padding: 20px 0;
+    }
+    
+    .cta-registration-wrapper .cta-section h2 {
+        font-size: 1.5em;
+    }
+    
+    .cta-registration-wrapper .cta-section p {
+        font-size: 0.95em;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai121 | Free Jobs for Freshers & PwBD in Mumbai Startups</title>
+    <meta name="description" content="Connect fresh graduates and PwBD with Small companies and Startups in Mumbai. MUMBAI121 offers smart hiring, candidate filtering, and end-to-end recruitment solutions.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script>
+    <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/02/09/12/20260209122847-D7RILG8S.js" defer></script>
+    
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/mumbai121_logo.png" alt="Mumbai121"
+                        style="max-width: 250px;">
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="fresher.html">FRESHER</a></li>
+                    <li><a href="pwbd.html">PwBD</a></li>
+                    <li><a href="company.html">COMPANY</a></li>
+                    <li><a href="volunteer.html">VOLUNTEER</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="faq.html">FAQ'S</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+     <!-- Job News Ticker -->
+        <div class="job-news-ticker">
+            <div class="ticker-badge">
+                <span>JOB NEWS</span>
+            </div>
+            <div class="ticker-content-wrapper">
+                <div class="ticker-content" id="tickerContent">
+                    <span class="ticker-item">HPCL is Hiring: 372 Exciting Vacancies – Apply Now!</span>
+                    <span class="ticker-item">New Jobs in Railway Recruitment Boards – Apply Now!</span>
+                    <span class="ticker-item">Indian Coast Guard is Hiring: 170 Exciting Vacancies – Apply Now!</span>
+                    <span class="ticker-item">NHAI Is Hiring – Apply Now!</span>
+                    <span class="ticker-item">New Jobs in Indian Overseas Bank – Apply Now!</span>
+                    <span class="ticker-item">LIC Is Hiring AAO's – Apply Now!</span>
+                    <span class="ticker-item">Central Bank of India is Hiring: 4500 Exciting Vacancies – Apply Now!</span>
+                    <span class="ticker-item">New Jobs in NIACL – Apply Now!</span>
+                </div>
+            </div>
+        </div>
+
+    <!-- Hero Section -->
+        <div class="home-hero">
+            <div class="hero-content">
+                <div class="hero-card">
+                <h1>Mumbai121</h1>
+                <p class="hero-subtitle"><strong>Supporting freshers and persons with benchmark disabilities (PwBD) in finding paid jobs in small companies and startups.</strong></p>
+                <ul class="hero-features">
+                    <li><i class="fas fa-check-circle"></i> <strong>100% free for candidates and companies.</strong></li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Empowering Talent. Enabling Growth</strong></li>
+                </ul>
+                <a href="#register" class="cta-button">REGISTER NOW</a>
+                </div>
+                
+            </div>
+            
+            <div class="hero-image">
+                <img src="images/mumbai121_homepage_image.png" 
+                     alt="Mumbai121 Team" 
+                     class="hero-img">
+            </div>
+        </div>
+
+ <!-- Mission Section -->
+        <div class="content-box mission-section box ">
+            <p>We connect Mumbai's fresh talent and people with disabilities to startups and small businesses—creating inclusive opportunities and a stronger future.</p>
+            <p>Whether you're a jobseeker or an employer, our platform is 100% free. No fees. No barriers. Just real connections that matter.</p>
+        </div>
+
+        
+    
+   <!-- Wrapped CTA and Registration Section -->
+<div class="cta-registration-wrapper">    
+<!-- Call to Action Section -->
+        <div class=" cta-section">
+            <h2>Ready to hire or get hired?</h2>
+            <p>Be part of a movement that supports diversity, inclusion, and growth.</p>
+        </div>
+        
+       
+
+        <!-- Registration Buttons -->
+        <div class="content-box1 registration-grid" id="register">
+            <a href="fresher.html" class="registration-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>FRESHER</h3>
+            </a>
+            <a href="pwbd.html" class="registration-card">
+                <i class="fas fa-universal-access"></i>
+                <h3>PwBD</h3>
+            </a>
+            <a href="company.html" class="registration-card">
+                <i class="fas fa-building"></i>
+                <h3>COMPANY</h3>
+            </a>
+            <a href="volunteer.html" class="registration-card">
+                <i class="fas fa-hands-helping"></i>
+                <h3>VOLUNTEER</h3>
+            </a>
+            <a href="donor.html" class="registration-card">
+                <i class="fas fa-heart"></i>
+                <h3>DONOR</h3>
+            </a>
+        </div>
+        </div>
+   
+
+    <footer>
+        <p>Copyright © 2026 | <strong><a href="home.html">Mumbai121</a></strong> |
+            <strong><a href="disclaimer.html">Disclaimer</a></strong> |
+            <strong><a href="contactus.html">Contact Us</a></strong> |
+            <a href="download.html"><strong>Download the App</strong></a>
+        </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mainMenu').classList.toggle('active');
+        }
+
+        // Ticker Animation
+        const ticker = document.getElementById('tickerContent');
+        let tickerWidth = ticker.scrollWidth;
+        let position = 0;
+
+        function animateTicker() {
+            position -= 1;
+            if (Math.abs(position) >= tickerWidth / 2) {
+                position = 0;
+            }
+            ticker.style.transform = `translateX(${position}px)`;
+            requestAnimationFrame(animateTicker);
+        }
+
+        // Clone ticker items for seamless loop
+        ticker.innerHTML += ticker.innerHTML;
+        animateTicker();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact MUMBAI121 | Connect with Us</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script>
+    <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/02/09/12/20260209122847-D7RILG8S.js" defer></script>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images\mumbai121_logo.png" alt="Mumbai121"
+                        style="max-width: 250px;">
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+            <nav>
+                <ul id="mainMenu">
+                   <li><a href="home.html">HOME</a></li>
+                    <li><a href="fresher.html">FRESHER</a></li>
+                    <li><a href="pwbd.html">PwBD</a></li>
+                    <li><a href="company.html">COMPANY</a></li>
+                    <li><a href="volunteer.html">VOLUNTEER</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="faq.html">FAQ'S</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+            <h1>Contact Us</h1>
+        </div>
+    <main>
+    
+
+        <div class="content-box">
+            <p>We're here to help you grow. Whether you're a jobseeker looking for your first opportunity or a company seeking enthusiastic freshers or PwBD talent – let's connect!</p>
+
+        </div>
+            <div class="content-box bg-darkcream box">
+                <h2 >Reach Out To Us:</h2>
+                <ul class="icon-list">
+                    <li style="padding-right: 50px;"><i class="fab fa-whatsapp" style="color: #2d3e50;"></i> <span>Whatsapp: +91-8082275000</span></li>
+                    <li style="padding-right: 80px;"><i class="fas fa-map-marker-alt"  style="color: #2d3e50;"></i> <span>Location: Mumbai, India</span></li>
+                    <li style="padding-left: 100px;"><i class="far fa-clock"  style="color: #2d3e50;"></i> <span>Timings: Monday to Friday, 02:00 PM – 3:00 PM</span></li>
+                </ul>
+        
+        </div>
+
+        <div class="content-box " id="form">
+            <div class="form-container">
+                <h1>Contact Us</h1>
+
+                <form id="contactForm" novalidate>
+
+                    <div class="form-field">
+                        <label>Who Are You?</label>
+                        <div class="radio-group">
+                            <label class="radio-option"><input type="radio" name="who" value="Fresher"> Jobseeker (Fresher Candidate)</label>
+                            <label class="radio-option"><input type="radio" name="who" value="PwBD"> Jobseeker (PwBD Candidate)</label>
+                            <label class="radio-option"><input type="radio" name="who" value="Company"> Employer/Company</label>
+                            <label class="radio-option"><input type="radio" name="who" value="Volunteer">Volunteer/Mentor</label>
+                        </div>
+                        <div class="validation-error">Please select one option.</div>
+                    </div>
+
+                    <div class="form-field">
+                        <label>Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" class="form-input" required>
+                        <div class="validation-error">Required</div>
+                    </div>
+
+                    <div class="form-field">
+                        <label>Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" class="form-input" required>
+                        <div class="validation-error">Invalid email</div>
+                    </div>
+
+                    <div class="form-field">
+                        <label>WhatsApp Number <span class="required">*</span></label>
+                        <input type="text" id="whatsapp" class="form-input" required>
+                        <div class="validation-error">Enter valid 10-digit number</div>
+                    </div>
+
+                    <div class="form-field">
+                        <label>Message / Query <span class="required">*</span></label>
+                        <input type="text" id="message" class="form-input" required>
+                        <div class="validation-error">Required</div>
+                    </div>
+
+                    <div class="form-field">
+                        <label>By continuing, you agree to our disclaimer and give your consent for the use of your data. <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-option"><input type="radio" name="consent" value="Yes" required> Yes</label>
+                        </div>
+                        <div class="validation-error">Your consent is required before submitting the form.</div>
+                    </div>
+
+                    <button class="submit-btn">Submit</button>
+                </form>
+
+                <div id="successMessage" style="display:none;text-align:center;">
+                    <h2 style="color:#188038;">Thank you for reaching out!!</h2>
+                    <p>Your message has been submitted. We will get back to you within a few working days.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Copyright © 2026 | <strong><a href="home.html">Mumbai121</a></strong> |
+            <strong><a href="disclaimer.html">Disclaimer</a></strong> |
+            <strong><a href="contactus.html">Contact Us</a></strong> |
+            <a href="download.html"><strong>Download the App</strong></a>
+        </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+    document.getElementById('mainMenu').classList.toggle('active');
+}
+
+/* ---------- HELPER FUNCTIONS ---------- */
+
+function showError(element) {
+    element.closest(".form-field")
+        ?.querySelector(".validation-error")
+        ?.style.setProperty("display", "block");
+}
+
+function hideError(element) {
+    const error = element.closest(".form-field")
+        ?.querySelector(".validation-error");
+    if (error) error.style.display = "none";
+}
+
+/* ---------- LIVE VALIDATION ---------- */
+
+// Text / email / number inputs
+document.querySelectorAll(".form-input").forEach(input => {
+    input.addEventListener("input", () => {
+        if (input.checkValidity() && input.value.trim() !== "") {
+            hideError(input);
+        }
+    });
+});
+
+// Radio buttons
+document.querySelectorAll('input[type="radio"]').forEach(radio => {
+    radio.addEventListener("change", () => {
+        hideError(radio);
+    });
+});
+
+/* ---------- FORM SUBMISSION ---------- */
+
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    let isValid = true;
+
+    const formElement = document.getElementById("contactForm");
+    const successMessage = document.getElementById("successMessage");
+
+    // Inputs
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const whatsappInput = document.getElementById("whatsapp");
+    const messageInput = document.getElementById("message");
+
+    // Hide previous errors
+    document.querySelectorAll(".validation-error").forEach(el => {
+        el.style.display = "none";
+    });
+
+    const whatsappRegex = /^\d{10}$/;
+
+    // Radio values
+    const whoValue =
+        document.querySelector('input[name="who"]:checked')?.value || "";
+
+    const consentValue =
+        document.querySelector('input[name="consent"]:checked')?.value || "";
+
+    // Data object
+    const formData = {
+        who: whoValue,
+        name: nameInput.value.trim(),
+        email: emailInput.value.trim(),
+        whatsapp: whatsappInput.value.trim(),
+        message: messageInput.value.trim(),
+        consent: consentValue
+    };
+
+    /* ---------- VALIDATIONS ---------- */
+
+    if (!whoValue) {
+        showError(document.querySelector('input[name="who"]'));
+        isValid = false;
+    }
+
+    if (!formData.name) {
+        showError(nameInput);
+        isValid = false;
+    }
+
+    if (!formData.email || !emailInput.checkValidity()) {
+        showError(emailInput);
+        isValid = false;
+    }
+
+    if (!whatsappRegex.test(formData.whatsapp)) {
+        showError(whatsappInput);
+        isValid = false;
+    }
+
+    if (!formData.message) {
+        showError(messageInput);
+        isValid = false;
+    }
+
+    if (!consentValue) {
+        showError(document.querySelector('input[name="consent"]'));
+        isValid = false;
+    }
+
+    /* ---------- STOP IF INVALID ---------- */
+
+    if (!isValid) {
+        document.querySelector(".validation-error[style*='block']")
+            ?.scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+    }
+
+    /* ---------- SUBMIT ---------- */
+
+    const response = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+        formElement.style.display = "none";
+        successMessage.style.display = "block";
+        console.log(formData);
+    } else {
+        console.error("Error while submitting contact form.");
+    }
+});
+    </script>
+</body>
+
+</html>
