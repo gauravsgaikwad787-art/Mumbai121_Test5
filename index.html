@@ -11,6 +11,15 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- PWA -->
+    <meta name="theme-color" content="#2d3e50">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Mumbai121">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./images/icon-192.png">
 </head>
 
 <body>
@@ -137,6 +146,15 @@
     <script>
         function toggleMenu() {
             document.getElementById('mainMenu').classList.toggle('active');
+        }
+
+        // Register Service Worker on the home page (required for PWA installability)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js')
+                    .then(reg => console.log('SW registered:', reg.scope))
+                    .catch(err => console.log('SW registration failed:', err));
+            });
         }
 
         // Ticker Animation
