@@ -14,10 +14,10 @@
     <meta name="apple-mobile-web-app-title" content="Mumbai121">
     
     <!-- PWA CRITICAL: Link to manifest -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="./manifest.json">
     
     <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" href="/images/icon-192.png">
+    <link rel="apple-touch-icon" href="./images/icon-192.png">
     
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
@@ -149,7 +149,7 @@
         // PWA SERVICE WORKER REGISTRATION - CRITICAL!
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js')
+                navigator.serviceWorker.register('./service-worker.js')
                     .then((registration) => {
                         console.log('ServiceWorker registered:', registration.scope);
                     })
